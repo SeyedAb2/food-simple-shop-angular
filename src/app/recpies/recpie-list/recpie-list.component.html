@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">دستور غذای حدید</button>
+    </div>
+</div>
+<hr>
+<div class="row ">
+    <div class="col-xs-12 mb">
+        <app-recpie-item (recpieSelectedToList)="catchRecpieFromItem($event)" [recpie]='recpie' *ngFor="let recpie of recpies"></app-recpie-item>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-edit></app-shopping-edit>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-5 form-group">
+                            <label for="name">نام ماده</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-sm-2 form-cntrol">
+                            <label for="amount">مقدار</label>
+                            <input type="number" class="form-control" id="amount">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 form-group">
+                            <button class="ml btn btn-success" type="submit">افزودن</button>
+                            <button class="ml btn btn-danger" type="submit">حذف</button>
+                            <button class="ml btn btn-primary" type="submit">بازنویسی</button>
+                        </div>
+                    </div>
+                    <hr>    
+                </form>
+            </div>
+        </div>
+        <ul class="list-group">
+            <a [ngStyle]="{'cursor': 'pointer'}" class="list-group-item" *ngFor="let ingrediant of ingrediants" >
+                {{ingrediant.name}} ({{ingrediant.amount}})
+            </a>
+        </ul>
+    </div>
+</div>

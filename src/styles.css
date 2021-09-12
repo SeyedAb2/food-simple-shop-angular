@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+@import url('./assets/css/fonts.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: vazir;
+    direction: rtl;
+}
+.mt{
+    margin-top:15px;
+}
+.mb{
+    margin-bottom:15px;
+}
+.mr{
+    margin-right:15px;
+}
+.ml{
+    margin-left:15px; 
+}

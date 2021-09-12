@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shop';
+  changeNav :boolean = true;
+  navigation(event: string){
+    //console.log(event)
+    if(event==='recpie'){
+      this.changeNav = true;
+    }else{
+      this.changeNav = false;
+    }
+  }
 }

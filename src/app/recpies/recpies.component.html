@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-7">
+        <app-recpie-list (recpieListToRecpie)="catchFromList($event)"></app-recpie-list>
+    </div>
+    <div class="col-md-5">
+        <app-recpie-detail *ngIf="recpieFromLIst;else noRecipeDetailShow;" [recpieDetailCatched]='recpieFromLIst'></app-recpie-detail>
+        <ng-template #noRecipeDetailShow>
+            <p class="text-bold">
+                هیچ دستور عذایی برای نمایش انتخاب نشده است یا دستور غذایی از قبل ایجاد نشده است !
+            </p>
+        </ng-template>
+
+    </div>
+</div>
